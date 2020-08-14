@@ -115,16 +115,15 @@ section:last-child {
 	float: right;
 	width: 72.5%;
 }
-//left side titles
 .sectionTitle h1 {
-	font-family: Georgia, serif
+	font-family: Georgia, serif;
 	font-style: normal;
 	font-size: 2.0em;
 	color: #380300;
 }
 
 .sectionContent h2 {
-	font-family: Georgia, serif
+	font-family: Georgia, serif;
 	font-style: bold;
 	font-size: 2.0em;
 	margin-bottom: -2px;
