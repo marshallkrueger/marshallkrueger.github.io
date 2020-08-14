@@ -31,7 +31,7 @@ p {
 
 .mainDetails {
 	padding: 25px 35px;
-	border-bottom: 2px solid #cf8a05;
+	border-bottom: 2px solid #380300;
 	background: #ededed;
 }
 
@@ -89,7 +89,7 @@ p {
 }
 
 #contactDetails ul li a:hover { 
-	color: #cf8a05;
+	color: #380300;
 }
 
 
@@ -120,7 +120,7 @@ section:last-child {
 	font-family: Georgia, serif
 	font-style: normal;
 	font-size: 2.0em;
-	color: #cf8a05;
+	color: #380300;
 }
 
 .sectionContent h2 {
