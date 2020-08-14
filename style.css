@@ -64,7 +64,8 @@ p {
 }
 
 #contactDetails {
-	float: right;
+	float: left;
+	display: block;
 }
 
 #contactDetails ul {
