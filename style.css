@@ -65,7 +65,7 @@ p {
 	float: left;
 }
 
-#contactDetails {
+#contactDetails { flex-wrap: wrap; }
 	text-align: center;
 	display: block;
 }
