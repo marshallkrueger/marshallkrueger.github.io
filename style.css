@@ -62,7 +62,7 @@ p {
 }
 
 #name {
-	float: left;
+	text-align: center;
 }
 
 #contactDetails { flex-wrap: wrap; }
