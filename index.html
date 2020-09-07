@@ -1,71 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Marshall Krueger</title>
-<meta charset="UTF-8">
+  <title>Marshall Krueger</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  font-family: "Arial, Helvetica", sans-serif;
+  transition: background-color .5s;
 }
 
-/* Style the header */
-.header {
-
-  padding: 80px;
-  text-align: center;
-  background: #380300;
-  color: white;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.tab {
+ margin-left: 1.5em
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Marshall Krueger</h1>
-  <p>Cartography, GIS, and Digital Media</p>
-</div>
-
-<div class="navbar">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="resume.html">Resume</a>
-  <a href="portfolio.html">Portfolio</a>
+  <a href="portfolio">Portfolio</a>
   <a href="blog.html">Blog</a>
 </div>
 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+<div id="main">
+  <span style="font-size:50px;cursor:pointer;margin-left:1.5em" onclick="openNav()">&#9776;&nbsp; Marshall Krueger</span>
+  <p style="margin-left:2.5em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cartography, GIS, and Digital Media. Human Geographer.</p>
+
+</div>
 </body>
 </html>
-
