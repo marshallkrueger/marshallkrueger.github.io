@@ -1,114 +1,111 @@
 <!DOCTYPE html>
-<html>
-<title>Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
-<body onload = "myFunction()">
-  <script>
-  function myFunction(){
-      var x = document.getElementById("myGrid");
-        x.className = "w3-row-padding";
-    }
-    </script>
+<html lang = "en">
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="resume.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Blog</a>
-  </div>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="maps, cartography"/>
+  <title>Portfolio</title>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+  <!--put your Bootstrap stylesheet links below this comment and above style.css-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-<!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-<h1><b>MARSHALL KRUEGER</b></h1>
- <h2> <em> Cartography, GIS, Digital Media, and Human Geography. </em> </h2>
-</header>
-</div>
+<body>
+	<!-- Create the navbar -->
+	<nav class="navbar navbar-expand-lg navbar-default">
+        <!-- Container inside the navbar header to span the page -->
+		<div class="container">
+            <!-- Creates the navbar header -->
+			<div class="navbar">
+                <!-- This complex script is just for a hamburger button -->
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+                    <span class="menu"> Menu</span>
+                </button>
+				<!-- Offset homepage nav persistent on smallscreens -->
+				<a class="navbar-brand" href="#">Marshall Krueger</a>
+            </div>
+			<!-- Links expanded on larger screens  -->
+            <div id="navbar-header" class="collapse navbar-collapse">
+                <!-- Links to include in navbar -->
+                <ul class="nav navbar-nav">
+                    <!-- Unordered list for links on navbar -->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div> <!-- end .navbar-collapse -->
+        </div> <!-- end .container -->
+    </nav> <!-- end navigation bar -->
 
-<!-- Photo Grid -->
-<div class="w3-row" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
-    <img src="bathymetry.jpg" style="width:100%">
-    <img src="rentoincomedisparities.jpg" style="width:100%">
-    <img src="banner500.jpg" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-  </div>
+	<div class="jumbotron">
+		<div class="container">
+            <h2>Marshall Krueger</h2>
+            <p>Cartography, GIS, and Educational Design.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="TheCityDivided.html">
+                        <img class="card-img-top" src="assets/city-divided-thumbnail.jpg" alt="the city divided storymap">
+					</a>
+                    <div class="card-body">
+                        <h4 class="card-title">The City Divided</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="portfolio/africa-physical-landscape.pdf">
+                        <img class="card-img-top" src="assets/test.jpg" alt="physical landscape africa"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">The Physical Landscape of Africa</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="portfolio/rentoincomedisparities.jpg">
+                        <img class="card-img-top" src="assets/rent-disparities-thumb.jpg" alt="wi rent to income"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">WI Rent to Income Disparities</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="StateControl.html">
+                        <img class="card-img-top" src="assets/controlmap-thumb.jpg" alt="state control map mapbox">
+          </a>
+                    <div class="card-body">
+                        <h4 class="card-title">State Control</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="http://qesoc.org/qeurious-meetup/">
+                        <img class="card-img-top" src="assets/qesoc-thumb.jpg" alt="qe-soc meetup">
+          </a>
+                    <div class="card-body">
+                        <h4 class="card-title">QEurious Meetup Webpage</h4>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
 
-  <div class="w3-third">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-    <img src="placeholder.png" style="width:100%">
-  </div>
-</div>
-
-<!-- End Page Content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-// Toggle grid padding
-function myFunction() {
-  var x = document.getElementById("myGrid");
-  if (x.className === "w3-row") {
-    x.className = "w3-row-padding";
-  } else {
-    x.className = x.className.replace("w3-row-padding", "w3-row");
-  }
-}
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
+    <!--put your external script links here-->
+    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
 </body>
+
 </html>

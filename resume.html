@@ -1,128 +1,111 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marshall Krueger</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
 
-     <title>Marshall's Resume</title>
-
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: relative; left: 20px; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
+    <!--put your Bootstrap stylesheet links below this comment and above style.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-default">
+        <!-- Create the navbar -->
+        <div class="container">
+            <div class="navbar">
+                <!-- Creates the navbar header -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+                    <span class="menu"> Menu</span>
+                </button> <!-- Hamburger button for smaller devices -->
+                <a class="navbar-brand" href="index.html">Marshall Krueger</a> <!-- Your website brand name -->
+            </div>
 
-    <div id="page-wrap">
-
-        <img src="marshallheadshot.jpg" alt="Marshall Headshot" id="pic" />
-
-        <div id="contact-info" class="vcard">
-
-            <!-- Microformats! -->
-
-            <h1 class="fn">Marshall Krueger</h1>
-
-            <p>
-              <br>
-                Aurora, CO <br>
-                Phone: <span class="tel">414-255-6499</span><br />
-                Email: <a class="email" href="mailto:marshkrueger@gmail.com">marshkrueger@gmail.com</a><br>
-                Web: <a href="marshallkrueger.github.io">marshallkrueger.github.io</a>
-            </p>
-        </div>
-
-
-
-        <div class="clear"></div>
-
-        <dl>
-            <dd class="clear"></dd>
-
-            <dt>Education</dt>
-            <dd>
-                <h2>University of Wisconsin - Madison</h2>
-                <p>Bachelor of Arts, <i>December 2020</i> <br>
-                  <strong> Double Major: </strong> GIS/Cartography and Human Geography<br />
-                   <strong>GPA:</strong> 3.46/4.0</p>
-            </dd>
-
-            <dd class="clear"></dd>
-
-            <dt>Experience</dt>
-            <dd>
-                <h2>Epistemic Analytics Lab - Madison, WI<span> Jan. 2020 - Present</span></h2>
-                <i>Digital Media and Design Assistant</i>
-                <ul>
-                    <li>Record, edit, and design tutorial and other video components for the lab.</li>
-                    <li>Improved media accessibility by implementing transcription and captioning guidelines.</li>
-                    <li>Perform graphic design tasks such as creating video card templates or logos.</li>
+            <div id="navbar-header" class="collapse navbar-collapse">
+                <!-- Links to include in navbar -->
+                <ul class="nav navbar-nav">
+                    <!-- Unordered list for links on navbar -->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </div> <!-- end .navbar-collapse -->
+        </div> <!-- end .container -->
+    </nav> <!-- end navigation bar -->
 
-                <h2>Dane County Community Defense - Madison, WI<span>March - June 2020</span></h2>
-                <i>Mutual Aid Volunteer</i>
-                <ul>
-                    <li>Responded to COVID-19 crisis .</li>
-                    <li>Case management for community members in need.</li>
-                    <li>Independently researched resource options and coordinated with clients.</li>
-
-                </ul>  <h2>Indie Coffee - Madison, WI<span> Jan. 2019 - Jan. 2020</span></h2>
-                  <i>Barista</i>
-                  <ul>
-                      <li>Provided customer service by taking orders and operating cash register.</li>
-                      <li>Prepared beverages and food while maintaining cleanliness of work environment.</li>
-                      <li>Trained new employees.</li>
-
-                  </ul>  <h2>Division of Continuing Studies - Madison, WI<span> Dec. 2018 - Dec. 2019</span></h2>
-                    <i>Online Course Development Assistant</i>
-                    <ul>
-                        <li>Managed videos by editing and creating closed captions.</li>
-                        <li>Edited and organized online course data. .</li>
-                        <li>Created graphic design components for courses, such as logos and supporting graphics.</li>
-                    </ul>
-            </dd>
-
-                        <dd class="clear"></dd>
-
-                        <dt>Skills</dt>
-                        <dd>
-                            <h2>Office skills</h2>
-                            <p>Records and database management, event organization, customer service,  </p>
-
-                            <h2>Computer skills</h2>
-                            <p> ArcGIS, QGIS, Mapbox Studio, Adobe Creative Suite (Illustrator, Photoshop, Premiere, After Effects, XD), Microsoft productivity software (Word, Excel, etc), HTML/CSS, Python, Slack.</p>
-                        </dd>
-
-
-            <dd class="clear"></dd>
-
-            <dt>References</dt>
-            <dd>Available upon request</dd>
-
-            <dd class="clear"></dd>
-        </dl>
-
-        <div class="clear"></div>
-
+  <div class="jumbotron">
+        <div class="container">
+            <h2>Resume</h2>
+        </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 resume">
+                <h3>Education</h3>
+                <h4>University of Wisconsin-Madison, expected graduation December 2020</h4>
+                Bachelor of Arts<br>
+                <strong> Double Major:</strong> Cartograpy/GIS and Human Geography
+                <hr>
+                <p>
+                <h3> Skills </h3>
+                    Illustrator | Premiere | Mapbox Studio Classic | ArcGIS - Pro, Storymaps, and Online | QGIS | GDAL/OGR |
+                    WordPress | Python | Microsoft Suite - Word, Excel, Powerpoint, Outlook, and Teams
+                </p>
+                <hr>
+                <h3>Experience</h3>
+                <h4>Epistemic Analytics Lab, January 2020 - Present</h4>
+                <h6><em> Digital Media and Design Assistant </em></h6>
+                <ul>
+                    <li>Design, produce, write, and manage lab webtool and theory teaching materials, including videos, graphics, and manuals.</li>
+                    <li>Ground content appropriately for audience composition and needs, scope of theory and subject matter, and proficiency levels of users.</li>
+                    <li>Collaborate with teamates and clients iteratively to design engaging content.</li>
+                </ul>
+                <strong>
+                  Accomplishments
+                </strong>
+                <ul>
+                  <li>Created video tutorials to support two lab webtools.</li>
+                  <li>Implemented accessibility guidelines for digital media.</li>
+                  <li>Designed <a href= "https://arcg.is/1H9eTO"> Wordpress Page</a> for teaching event.</li>
+                  <li>Designed layout and funcitonality of spatial learning tool.</li>
+                  <li>Created client video for using lab theory in relation to COVID-19 pandemic.</li>
+                </ul>
+                <h4>Dane County Community Defense, March 2020 - June 2020</h4>
+                <h6><em> Mutual Aid Volunteer </em></h6>
+                <ul>
+                    <li>Coordinated aid resources to community members during peak of COVID-19 pandemic.</li>
+                    <li>Managed cases and researched resource opportunities based on specific community members’ situations.</li>
+                    <li>Communicated with other volunteers to ensure case completion.</li>
+                </ul>
+                <h4>Indie Coffee, January 2019 - January 2020</h4>
+                <h6><em> Barista and Events Manager </em></h6>
+                <ul>
+                    <li>Revived live music event programming through community outreach, artist communications, and design and implementation of marketing strategies.</li>
+                    <li>Managed and trained employees.</li>
+                    <li>Engaged with customers in a service-centered role.</li>
+                </ul>
+                <h4>Division of Continuing Studies, December 2018 - December 2019</h4>
+                <h6><em> Online Course Development Assistant </em></h6>
+                <ul>
+                    <li>Ensured course accessibility for students and instructors in collaboration with instructional designers.</li>
+                    <li>Created video captions and transcripts, image alt-text, and ensured screen-reader compatibilty.</li>
+                    <li>Proofread course design plans and tested course functionality.</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!--put your external script links here-->
+    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
 </body>
 
 </html>
