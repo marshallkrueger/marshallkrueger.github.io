@@ -1,15 +1,21 @@
+
+
+main { opacity: 0; }
+
 /***** NAVBAR *****/
 
 .navbar {
-    background-color: #A9AAAA;
+    background-color: #557174;
     border-radius: 0;
 }
 
 /* Navbar title */
 .navbar-default .navbar-brand {
-    color: black;
-    font-size: px;
-    font-weight: bold;
+    color: #F7F7E8;
+    font: 14px Montserrat, sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    padding: 15px;
 }
 
 /* Navbar hover effects */
@@ -17,15 +23,17 @@
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #FFC300;
+    color: #C7CFB7;
     text-decoration: none;
 }
 
 /* Navbar links */
 .navbar-default .navbar-nav > li > a {
-    color: #000;
-    font-size: 16px;
-    padding: 10px;
+  color: #F7F7E8;
+  font: 14px Montserrat, sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding: 15px;
 }
 
 /* Navbar collapsed styles */
@@ -53,9 +61,11 @@
 /*** JUMBOTRON ***/
 
 .jumbotron {
+    font-family: Bebas Neue;
+    letter-spacing: 3px;
     background-color: #FFFFFF;
     text-align: center;
-    color: #000;
+    color: #557174;
     padding: 3%;
     border-radius: 0px;
 }
@@ -68,14 +78,20 @@
 /*** CARD ***/
 
 .card {
-    background-color: #fff;
-    border-color: #cccccc;
+    background-color: #557174;
+    border-color: #557174;
     border-width: 3px;
     width: 100%;
 }
 
 .card:hover {
-    border-color: #FFC300;
+    border-color: #C7CFB7;
+}
+
+.card-title {
+  size: 14px;
+  color: #F7F7E8
+
 }
 
 /*** Basic Text Styles ***/
@@ -85,6 +101,7 @@
 }
 
 .resume h3 {
+   font-family: Montserrat;
     font-weight: bold;
 }
 
@@ -107,10 +124,15 @@ a {
 a:hover {
     color: #ebd122;
 }
-  
+
+.col-sm {
+background-color: #C7CFB7;
+}
+
 body {
 
-    font-family: "Trebuchet MS", Helvetica, sans-serif
-    background-color: ##FFFBE4;
-    color: #242424;
+    font: 18px Montserrat,  sans-serif;
+    line-height: 1.8;
+    background-color: #FFFFFF;
+    color: #557174;
 }
