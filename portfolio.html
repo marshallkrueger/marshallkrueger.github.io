@@ -1,179 +1,143 @@
 <!DOCTYPE html>
-<html lang = "en">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="maps, cartography"/>
-  <title>Portfolio</title>
+  <title>Marshall Krueger</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <!--put your Bootstrap stylesheet links below this comment and above style.css-->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <style>
+
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f7f6e7;
+  }
+  #one {font-size: 17px;}
+  #two {font-size:20px;}
+  .margin {margin-bottom: 100px;}
+  .bg-1 {
+    background-color: #314e52; /* Blue */
+    color: #f7f6e7;
+  }
+  .bg-2 {
+    background-color: #f2a154; /* Orange */
+    color: #314e52;
+  }
+  .bg-3 {
+    background-color: #f7f6e7; /* Cream */
+    color: #314e52;
+  }
+  .bg-4 {
+    background-color: #e7e6e1; /* Gray */
+    color: #FBFAFA;
+  }
+  .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .navbar {
+    background-color: #e7e6e1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #f2a154 !important;
+  }
+
+  </style>
 </head>
-
 <body>
-	<!-- Create the navbar -->
-	<nav class="navbar navbar-expand-lg navbar-default">
-        <!-- Container inside the navbar header to span the page -->
-		<div class="container">
-            <!-- Creates the navbar header -->
-			<div class="navbar">
-                <!-- This complex script is just for a hamburger button -->
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
-                    <span class="sr-only">Toggle navigation</span>
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
-                    <span class="menu"> Menu</span>
-                </button>
-				<!-- Offset homepage nav persistent on smallscreens -->
-				<a class="navbar-brand" href="index.html">Marshall Krueger</a>
-            </div>
-			<!-- Links expanded on larger screens  -->
-            <div id="navbar-header" class="collapse navbar-collapse">
-                <!-- Links to include in navbar -->
-                <ul class="nav navbar-nav">
-                    <!-- Unordered list for links on navbar -->
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div> <!-- end .navbar-collapse -->
-        </div> <!-- end .container -->
-    </nav> <!-- end navigation bar -->
 
-	<div class="jumbotron">
-		<div class="container">
-            <h2>Marshall Krueger</h2>
-            <p>Cartography, GIS, and Data Visualization.</p>
-        </div>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  <a class="navbar-brand" href="index.html">Marshall Krueger</a>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="TheCityDivided.html">
-                        <img class="card-img-top" src="assets/city-divided-thumbnail.jpg" alt="the city divided storymap">
-					</a>
-                    <div class="card-body">
-                        <h4 class="card-title">The City Divided <br> <br></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="portfolio/africa-physical-landscape.pdf">
-                        <img class="card-img-top" src="assets/test.jpg" alt="physical landscape africa"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Africa's Physical Landscape</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="portfolio/wi-rent-to-income-disparities.pdf">
-                        <img class="card-img-top" src="assets/rent-disparities-thumb.jpg" alt="wi rent to income"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Rent to Income Disparities</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mt-4">
-                <div class="card">
-                    <a href="StateControl.html">
-                        <img class="card-img-top" src="assets/statecontrol-thumbnail.jpg" alt="state control map mapbox">
-          </a>
-                    <div class="card-body">
-                        <h4 class="card-title">State Control</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4">
-                <div class="card">
-                    <a href="Bear Creek.html">
-                        <img class="card-img-top" src="assets/bearcreek-thumbnail.jpg" alt="bear creek map">
-          </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Bear Creek</h4>
-                    </div>
-                </div>
-            </div>
-          </div>
-    <div class="header">
-      <h2 style="text-align: center; padding: 3%"> Work Samples </h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="http://qesoc.org/qeurious-meetup/">
-                        <img class="card-img-top" src="assets/qesoc-thumb.jpg" alt="qesoc wordpress">
-          </a>
-                    <div class="card-body">
-                        <h4 class="card-title">QEurious Wordpress Page</h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="https://www.youtube.com/watch?v=09nlIATywFk&t=10s">
-                        <img class="card-img-top" src="assets/qewebinarseries-thumb.jpg" alt="qe webinar series"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">QE Webinar Series</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="https://drive.google.com/file/d/1KYjpxaV3xYxp9JM2fv4KvGbqwGqaGtgu/view?usp=sharing">
-                        <img class="card-img-top" src="assets/enathumb.jpg" alt="ena video series"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">ENA Tutorial Video Series</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mt-4">
-              <div class="card">
-                  <a href="https://drive.google.com/file/d/1rXSWTfmGMe_FHnAnGgpqdWvyzWVFuL6j/view?usp=sharing">
-                      <img class="card-img-top" src="assets/ICQEthumb.jpg" alt="ICQE video">
-        </a>
-                  <div class="card-body">
-                      <h4 class="card-title">ICQE20 Video</h4>
-                    </div>
-                </div>
-            </div>
-              <div class="col-md-4 mt-4">
-                  <div class="card">
-                      <a href="https://www.youtube.com/watch?v=Sy-gwY3SXQ0&feature=youtu.be">
-                          <img class="card-img-top" src="assets/COVIDthumb.jpg" alt="COVID video">
-            </a>
-                      <div class="card-body">
-                          <h4 class="card-title">COVID Video</h4>
-                      </div>
-                  </div>
-              </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <a href="https://drive.google.com/file/d/1c5akTMYHpUAwiJZJovohPxitRUr2tQ9b/view?usp=sharing">
-                            <img class="card-img-top" src="assets/PS-thumb2.jpg" alt="Purple State videos">
-              </a>
-                        <div class="card-body">
-                            <h4 class="card-title">Purple State Videos</h4>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-        </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
     </div>
-    <!--put your external script links here-->
-    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h2>Portfolio</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7"> A map of Bear Creek</p>
+      <a href="Bear Creek.html"><img src="assets/bearcreek-thumbnail.jpg" class="img-responsive margin" style="width:100%" alt="bearcreek">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">Africa's Physical Landscape</p>
+      <a href="portfolio/africa-physical-landscape.pdf"><img src="assets/test.jpg" class="img-responsive margin" style="width:100%" alt="africa">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7"> The City Divided</p>
+      <a href="TheCityDivided.html"><img src="assets/city-divided-thumbnail.jpg" class="img-responsive margin" style="width:100%" alt="citydivided">
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">Press Conferences on COVID-19</p>
+      <a href="https://www.youtube.com/watch?v=Sy-gwY3SXQ0"><img src="assets/COVIDthumb.jpg" class="img-responsive margin" style="width:100%" alt="covidvideo">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">QE Webinar Series</p>
+      <a/ href="https://www.youtube.com/watch?v=09nlIATywFk&t=10s"><img src="assets/qewebinarseries-thumb.jpg" class="img-responsive margin" style="width:100%" alt="qevideos">
+</a>
+    </div>
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">QEurious Wordpress Page</p>
+      <a/ href="http://qesoc.org/qeurious-meetup/"><img src="assets/qesoc-thumb.jpg" class="img-responsive margin" style="width:100%" alt="qeurious">
+</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">ENA Webtool Tutorial Series</p>
+      <a href="https://drive.google.com/file/d/1KYjpxaV3xYxp9JM2fv4KvGbqwGqaGtgu/view?usp=sharing"><img src="assets/enathumb.jpg" class="img-responsive margin" style="width:100%" alt="enavideos">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">ICQE20 Video</p>
+      <a/ href="https://drive.google.com/file/d/1rXSWTfmGMe_FHnAnGgpqdWvyzWVFuL6j/view?usp=sharing"><img src="assets/ICQE20thumb.jpg" class="img-responsive margin" style="width:100%" alt="ICQE20video">
+</a>
+    </div>
+    <div class="col-sm-4">
+      <p style="border: 1px dashed #f7f6e7">iPlan</p>
+      <a/ href="https://www.i-plan.us/"><img src="assets/iplan-thumb.jpg" class="img-responsive margin" style="width:100%" alt="iplan">
+</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+
+</footer>
+
 </body>
-
 </html>
