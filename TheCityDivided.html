@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-<html lang = "en">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="maps, cartography"/>
-  <title>Portfolio</title>
+  <title>Marshall Krueger</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <!--put your Bootstrap stylesheet links below this comment and above style.css-->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <style>
+
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f7f6e7;
+  }
+  #one {font-size: 17px;}
+  #two {font-size:20px;}
+  .margin {margin-bottom: 500px;}
+  .bg-1 {
+    background-color: #314e52; /* Blue */
+    color: #f7f6e7;
+  }
+  .bg-2 {
+    background-color: #f2a154; /* Orange */
+    color: #314e52;
+  }
+  .bg-3 {
+    background-color: #f7f6e7; /* White */
+    color: #314e52;
+  }
+  .bg-4 {
+    background-color: #314e52; /* Black Gray */
+    color: #FBFAFA;
+  }
+  .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .navbar {
+    background-color: #e7e6e1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #f2a154 !important;
+  }
+
+  </style>
 </head>
-
 <body>
-	<!-- Create the navbar -->
-	<nav class="navbar navbar-expand-lg navbar-default">
-        <!-- Container inside the navbar header to span the page -->
-		<div class="container">
-            <!-- Creates the navbar header -->
-			<div class="navbar">
-                <!-- This complex script is just for a hamburger button -->
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
-                    <span class="sr-only">Toggle navigation</span>
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
-                    <span class="menu"> Menu</span>
-                </button>
-				<!-- Offset homepage nav persistent on smallscreens -->
-				<a class="navbar-brand" href="#">Marshall Krueger</a>
-            </div>
-			<!-- Links expanded on larger screens  -->
-            <div id="navbar-header" class="collapse navbar-collapse">
-                <!-- Links to include in navbar -->
-                <ul class="nav navbar-nav">
-                    <!-- Unordered list for links on navbar -->
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div> <!-- end .navbar-collapse -->
-        </div> <!-- end .container -->
-    </nav> <!-- end navigation bar -->
 
-	<div class="jumbotron">
-		<div class="container">
-            <h2>The City Divided</h2>
-            <p>Minneapolis as a Case Study in De Facto Segregation</p>
-            <a href= "https://arcg.is/1H9eTO"> <h3>The City Divided</h3></a>
-        </div>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Marshall Krueger</a>
     </div>
-    <div class="container">
-        <div class="d-flex justify-content-center row">
-            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-                <p class="portfolio-description">
-                    This piece was born as a response to an opinion piece in the Minnesota Star Tribune that claimed race wasn’t a factor in city planning and considering it in city processes only alienated white residents. I decided to learn about Minneapolis’s city planning processes, racial distribution, and its 2040 Plan to understand if there was really a case where race didn’t come into play. This story map moves through Minneapolis’s history of redlining, current zoning ordinances, and the proposed built land uses of the 2040 Plan to show the spatial patterns and processes that have created and reproduced de facto segregation in Minneapolis.
-                  </p>
-            </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        </div>
-    </div>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">The City Divided</h3>
+  <p>This piece was born as a response to an opinion piece in the Minnesota Star Tribune that claimed race wasn’t a factor in city planning and considering it in city processes only alienated white residents. I decided to learn about Minneapolis’s city planning processes, racial distribution, and its 2040 Plan to understand if there was really a case where race didn’t come into play. This story map moves through Minneapolis’s history of redlining, current zoning ordinances, and the proposed built land uses of the 2040 Plan to show the spatial patterns and processes that have created and reproduced de facto segregation in Minneapolis.
+</p>
 
-    </div>
-    </div>
 
-    <!--put your external script links here-->
-    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+
+</footer>
+
 </body>
-
 </html>
